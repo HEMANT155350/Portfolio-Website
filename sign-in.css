@@ -1,0 +1,184 @@
+.hidden {
+    display: none !important;
+}
+
+/* Card se button ko azaad karne ke liye position relative rakhein screen par */
+.auth-body {
+    position: relative;
+}
+
+/* Screen ke Top-Left corner me floating button */
+.back-home {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.back-home:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(-3px); /* Subtle hover animation */
+}
+
+/* Auth Page Background */
+.auth-body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Glassmorphism Card Style */
+.auth-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.auth-card h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.8rem;
+}
+
+.auth-subtitle {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 42px;
+    background: #181818;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #4CAF50; /* Portfolio Green Theme Accent */
+}
+
+/* Remember Me & Forgot Password */
+.auth-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.auth-options a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Primary Button */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; /* Navbar ke Sign In button jaisa Green color */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Divider */
+.divider {
+    margin: 20px 0;
+    border-bottom: 1px solid #333;
+    line-height: 0.1em;
+}
+
+.divider span {
+    background: #121212;
+    padding: 0 10px;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+/* Social Buttons */
+.social-auth {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.social-login-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    background: #181818;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.social-login-btn:hover {
+    border-color: #555;
+}
+
+.signup-link {
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.signup-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
