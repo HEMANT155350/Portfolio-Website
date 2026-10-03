@@ -1,30 +1,139 @@
 body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
   background-color: #0d0d0d;
   color: #ffffff;
 }
 
+/* Container ko Grid mein convert karne ke liye */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 260px)); /* Responsive Grid */
+  gap: 20px; /* Cards ke beech ka space */
   padding: 20px 0;
+  justify-content: center; /* Center the grid */
 }
 
-.projects-grid {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-    gap: 10px;
-    background-color: #b42121;
-    border: 1px solid black;
-    padding: 10px 18px;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: transform 0.2s ease, border-color 0.2s ease;
+/* Individual Card Styling */
+.project-card {
+  background-color: #2b2424; /* Apne hisab se background color change karein */
+  border-radius: 12px;
+  border: 2px solid transparent;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+/* Image Fit Fix */
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 
 .project-card:hover {
   transform: translateY(-5px);
+  border-color: #4caf50;
+}
+
+.project-card h3 {
+   color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.project-card p {
+  color: #a1a1aa; 
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* Tech Stack Tags (HTML5, CSS3, JS) Pill Style */
+.tags span {
+  display: inline-block;
+  background-color: #363663;
+  color: #e4e4e7;
+  font-size: 0.85rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-bottom: 12px;
+}
+
+/* Links Ko Stylish Buttons Banana */
+.links a {
+  display: inline-block;
+  color: #69eb98; 
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: opacity 0.2s ease;
+}
+
+.links a:hover {
+  text-decoration:underline;
+  opacity: 0.8;
+} 
+
+.projects-section h2, 
+h2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #000000; /* Dark background */
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Projects grid ko thoda margin dein taaki pehla card heading ke peeche na chhupe */
+.projects-grid {
+  margin-top: 60px; 
+}
+
+.header-container {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #0d0d0d;
+  
+  /* Single line layout ke liye */
+  display: flex;
+  flex-direction: row; /* Horizontal alignment */
+  align-items: center; /* Vertically center align */
+  justify-content: center; /* Horizontally screen ke center mein */
+  gap: 12px; /* Badge aur Heading ke beech ka gap */
+  
+  padding: 15px 0 !important;
+  width: 100%;
+}
+
+.portfolio-badge {
+  display: inline-block !important;
+  color: #22c55e !important; /* Green Color */
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.main-title {
+  color: #ffffff !important;
+  font-size: 1.5rem !important;
+  margin: 0 !important;
+  line-height: 1 !important;
 }
