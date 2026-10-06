@@ -4,98 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME-HEMANT PRAJAPATI</title>
+    <meta name="theme-color" content="#101613">
+    <meta name="description" content="The portfolio of Hemant Prajapati, a frontend developer learning and building for the web.">
+    <title>Hemant Prajapati | Frontend Developer</title>
     <link rel="stylesheet" href="index.css">
-    <script src="home.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body>
+<body id="top">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="index.html" aria-label="Hemant Prajapati, home">&lt;HEMANT/&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#social">Social</a></li>
+                <li><a class="nav-cta" href="projects.html">Projects <span aria-hidden="true">↗</span></a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav class="navbar">
-        <div class="logo">&lt;HEMANT/&gt;</div>
-        <ul class="nav-links">
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#social">Social</a></li>
-            <li><a href="#contact" class="btn-nav">Contact </a></li>
-        </ul>
-    </nav>
-
-    <div class="portfolio-card">
-        <section class="hero-section">
+    <main class="page-shell">
+        <section class="hero-section" aria-labelledby="hero-title">
             <div class="hero-content">
-                <h1 class="hero-title">HEMANT PRAJAPATI</h1>
-                <p class="hero-text">
-                    WEB DEVELOPER | LEARNING
-                </p>
-                <p class="hero-text1">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> FRONTEND DEVELOPER · LEARNING</p>
+                <h1 class="hero-title" id="hero-title">Hemant<br><span>Prajapati</span></h1>
+                <p class="hero-lead">Building thoughtful experiences for the web.</p>
+                <p class="hero-description">
                     I am a frontend developer, and still learning. My journey started with a curiosity for how visually
                     engaging interfaces come to life on the web, which quickly grew into a drive to master modern web
-                    technologies like HTML, CSS,( JavaScript, and React still learning). I thrive at the intersection of
-                    design and clean code, constantly looking for ways to craft seamless user experiences, optimize
-                    performance, and turn complex ideas into intuitive digital interfaces.
+                    technologies like HTML and CSS, while continuing to learn JavaScript and React. I thrive at the intersection
+                    of design and clean code, constantly looking for ways to craft seamless user experiences, optimize performance, and turn
+                    complex ideas into intuitive digital interfaces.
                 </p>
-                <a href="projects.html" class="btn-primary">
-                    Let's get started &#x276F;
+                <div class="hero-actions">
+                    <a href="projects.html" class="button button-primary">Explore my projects <span aria-hidden="true">↗</span></a>
+                    <a href="#social" class="button button-secondary">Find me online</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="image-frame">
+                    <img src="hemant.jpg" alt="Hemant Prajapati">
+                </div>
+                <span class="image-caption">FRONTEND DEVELOPMENT</span>
+            </div>
+        </section>
+
+        <section id="services" class="content-section services-section" aria-labelledby="services-title">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT I DO</p>
+                <h2 id="services-title">Services</h2>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></div>
+                    <div>
+                        <p class="card-index">01 / BUILD</p>
+                        <h3>Web Development</h3>
+                        <p>Building fast, modern, and responsive websites using clean HTML, CSS, and modern frontend practices.</p>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <div>
+                        <p class="card-index">02 / DESIGN</p>
+                        <h3>UI / UX Implementation</h3>
+                        <p>Converting visual designs and wireframes into smooth, intuitive, and interactive user interfaces.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="content-section skills-section" aria-labelledby="skills-title">
+            <div class="section-heading">
+                <p class="eyebrow">TOOLS OF THE TRADE</p>
+                <h2 id="skills-title">Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-badge"><i class="fa-brands fa-html5" aria-hidden="true"></i><span>HTML5</span></div>
+                <div class="skill-badge"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i><span>CSS3</span></div>
+            </div>
+        </section>
+
+        <section id="social" class="content-section social-section" aria-labelledby="social-title">
+            <div class="section-heading">
+                <p class="eyebrow">ELSEWHERE ON THE WEB</p>
+                <h2 id="social-title">Connect</h2>
+            </div>
+            <div class="social-grid">
+                <a href="https://www.instagram.com/hemant_prajapati_x_?stkn=MTdhYm84MDZudHJrNA==" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <span><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</span><span aria-hidden="true">↗</span>
+                </a>
+                <div class="social-link social-link-unavailable"><span><i class="fa-brands fa-youtube" aria-hidden="true"></i> YouTube</span></div>
+                <div class="social-link social-link-unavailable"><span><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</span></div>
+                <a href="https://github.com/HEMANT155350" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <span><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</span><span aria-hidden="true">↗</span>
                 </a>
             </div>
-            <div class="profile-image-container">
-                <img src="hemant.jpg" alt="Profile Photo">
-            </div>
         </section>
 
-        <!--SERVICES-->
-        <section id="services" class="services-section">
-            <h2>SERVICES</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">💻</div>
-                    <h3>Web Development</h3>
-                    <p>Building fast, modern, and responsive websites using clean HTML, CSS, and modern frontend
-                        practices.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>UI / UX Implementation</h3>
-                    <p>Converting visual designs and wireframes into smooth, intuitive, and interactive user interfaces.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills-section">
-            <h2>Skills </h2>
-            <div class="skills-grid">
-                <div class="skill-badge">
-                    <i class="fa-brands fa-html5"></i>
-                    <span>HTML5</span>
-                </div>
-                <div class="skill-badge">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <span>CSS3</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="social-profile" id="social">
-            <h2 class="social-profile-title">SOCIAL PROFILE</h2>
-            <div class="logos-grid">
-                <a href="https://www.instagram.com/hemant_prajapati_x_?stkn=MTdhYm84MDZudHJrNA==" target="_blank"
-                    class="logo-box"><i class="fa-brands fa-instagram"></i>INSTAGRAM</a>
-                <a href="" target="_blank" class="logo-box"><i class="fa-brands fa-youtube"></i>YOU TUBE</a>
-                <a href="" class="logo-box"><i class="fa-brands fa-facebook"></i>FACEBOOK</a>
-                <a href="https://github.com/HEMANT155350" target="_blank" class="logo-box"><i class="fa-brands fa-github"></i>GIT HUB</a>
-            </div>
-        </section>
-
-        <div class="footer">
-            <p>Made with ❤️ in INDIA</p>
-        </div>
-
-
-    </div>
-
+        <footer class="site-footer">
+            <a class="logo footer-logo" href="index.html">&lt;HEMANT/&gt;</a>
+            <p>Made with <span aria-label="love">♥</span> in India</p>
+            <a href="#top" class="back-to-top">Back to top ↑</a>
+        </footer>
+    </main>
 </body>
 
 </html>
