@@ -2,53 +2,47 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="projects.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101613">
+    <meta name="description" content="Selected work from Hemant Prajapati.">
+    <title>Projects | Hemant Prajapati</title>
+    <link rel="stylesheet" href="projects.css">
 </head>
 
 <body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="index.html">&lt;HEMANT/&gt;</a>
+            <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Back to home</a>
+        </nav>
+    </header>
 
-  <div class="header-container">
-    <span class="portfolio-badge">• PORTFOLIO</span>
-    <h2 class="main-title">Featured Projects</h2>
-  </div>
-  <section class="projects-section">
+    <main class="projects-page">
+        <header class="page-intro">
+            <p class="eyebrow"><span aria-hidden="true">•</span> PORTFOLIO</p>
+            <h1>Featured <span>Projects</span></h1>
+        </header>
 
-
-
-    <div class="projects-grid">
-      <!-- Card 1 -->
-      <div class="project-card">
-        <img src="hemant.jpg" alt="Project Preview">
-        <h3>E-Commerce Interface</h3>
-        <p>A responsive shopping interface built with clean HTML, CSS, and JavaScript.</p>
-        <div class="tags">
-          <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
-        </div>
-        <div class="links">
-          <a href="#">Live Demo</a>
-          <a href="#">GitHub</a>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="project-card">
-        <img src="your-image.jpg" alt="Project Preview">
-        <h3>E-Commerce Interface</h3>
-        <p>A responsive shopping interface built with clean HTML, CSS, and JavaScript.</p>
-        <div class="tags">
-          <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
-        </div>
-        <div class="links">
-          <a href="#">Live Demo</a>
-          <a href="#">GitHub</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
+        <section class="projects-section" aria-label="Featured projects">
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="hemant.jpg" alt="Hemant Prajapati">
+                        <span class="project-number">01</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-type">WEB DEVELOPMENT</p>
+                        <h2>E-Commerce Interface</h2>
+                        <p class="project-description">A responsive shopping interface built with clean HTML, CSS, and JavaScript.</p>
+                        <div class="tags" aria-label="Technologies used">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
